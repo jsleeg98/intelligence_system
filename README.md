@@ -5,3 +5,4 @@
 |1주차|OT와 활용할 툴 소개(Anaconda)| https://github.com/jsleeg98/intelligence_system/pull/1#issue-1361324174 |
 |2주차|Python의 자료형, numpy| https://github.com/jsleeg98/intelligence_system/pull/3#issue-1369228388 |
 |3주차|matplotlib 활용하여 그래프 그리기, 딥러닝 역사, 퍼센트론 개념|https://github.com/jsleeg98/intelligence_system/pull/5#issue-1377309662|
+|4주차|퍼셉트론으로 AND, OR, NAND, XOR 만들기, 신경망|https://github.com/jsleeg98/intelligence_system/pull/7#issue-1385591473|

@@ -16,3 +16,5 @@
 * ReLU function
 ![](ReLU.png)
 
+# Task
+![img.png](img.png)

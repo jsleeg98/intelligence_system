@@ -13,8 +13,8 @@ def img_show(img):
 (x_train, t_train), (x_test, t_test) = load_mnist(flatten=True,
     normalize=False)
 
-img = x_train[99]  # 100번째 훈련 데이터 이미지
-label = t_train[99]  # 100번째 훈련 데이터 라벨
+img = x_train[0]  # 100번째 훈련 데이터 이미지
+label = t_train[0]  # 100번째 훈련 데이터 라벨
 print(label)  # 100번째 훈련 데이터 라벨 출력
 print(img.shape)  # (784,), 28x28 이미지를 flatten 했기 때문
 img = img.reshape(28, 28)  # 원래 이미지 모양으로 변형

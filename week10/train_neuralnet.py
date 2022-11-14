@@ -18,11 +18,13 @@ import matplotlib.pyplot as plt
     load_mnist(normalize=True, one_hot_label=True)
 
 # 하이퍼 파라메터
-iters_num = 10000  # 반복횟수
+iters_num = 6000
+# 반복횟수
 train_size = x_train.shape[0]
 batch_size = 100  # 미니배치 크기
 learning_rate = 0.1
-network = TwoLayerNet(input_size=784, hidden_size=50, output_size=10)
+hidden = 100
+network = TwoLayerNet(input_size=784, hidden_size=hidden, output_size=10)
 
 train_loss_list = []
 train_acc_list = []
@@ -32,7 +34,7 @@ test_acc_list = []
 iter_per_epoch = max(train_size / batch_size, 1)
 
 for i in range(iters_num):
-    print(i)
+    # print(i)
     # 미니배치 획득
     batch_mask = np.random.choice(train_size, batch_size)
     x_batch = x_train[batch_mask]
@@ -59,12 +61,22 @@ for i in range(iters_num):
         print("train acc, test acc | "
               + str(train_acc) + ", " + str(test_acc))
 
+print(max(test_acc_list))
+# 그래프 그리기
+markers = {'train': 'o', 'test': 's'}
+x = np.arange(len(train_acc_list))
+plt.plot(x, train_acc_list, label='train acc')
+plt.plot(x, test_acc_list, label='test acc', linestyle='--')
+plt.xlabel("epochs")
+plt.ylabel("accuracy")
+plt.ylim(0, 1.0)
+plt.legend(loc='lower right')
+# plt.title(f'batch size = {batch_size}')
+plt.title(f'hidden = {hidden}')
+plt.text(test_acc_list.index(max(test_acc_list)), max(test_acc_list)-0.01,
+         str(max(test_acc_list)),
+         color='r',
+         horizontalalignment='center',
+         verticalalignment='top')
 
-# print(train_loss_list)
-plt.plot(train_loss_list)
 plt.show()
-
-plt.plot(test_acc_list, 'r--')
-plt.plot(train_acc_list, 'b')
-plt.show()
-

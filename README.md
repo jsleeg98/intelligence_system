@@ -10,4 +10,5 @@
 |7주차|신경망|[week7](https://github.com/jsleeg98/intelligence_system/tree/master/week7)|
 |9주차|신경망 학습|[week9](https://github.com/jsleeg98/intelligence_system/tree/master/week9)|
 |10주차|신경망 학습|[week10](https://github.com/jsleeg98/intelligence_system/tree/master/week10)|
-|11주차|오차 역전파법|[week11](https://github.com/jsleeg98/intelligence_system/tree/master/week11)
+|11주차|오차 역전파법|[week11](https://github.com/jsleeg98/intelligence_system/tree/master/week11)|
+|12주차|학습 관련 기술들|[week12](https://github.com/jsleeg98/intelligence_system/tree/master/week12)|

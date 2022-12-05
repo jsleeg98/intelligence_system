@@ -13,3 +13,4 @@
 |11주차|오차 역전파법|[week11](https://github.com/jsleeg98/intelligence_system/tree/master/week11)|
 |12주차|학습 관련 기술들|[week12](https://github.com/jsleeg98/intelligence_system/tree/master/week12)|
 |13주차|합성곱 신경망|[week13](https://github.com/jsleeg98/intelligence_system/tree/master/week13)|
+|14주차|딥러닝|[week14](https://github.com/jsleeg98/intelligence_system/tree/master/week14)|
